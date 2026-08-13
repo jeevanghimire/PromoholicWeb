@@ -1,0 +1,61 @@
+/**
+ * ⚠️ THEME CONFIGURATION — Tailwind v4 (Promoholic)
+ * -------------------------------------------------------------
+ * Brand tokens for the Promoholic portfolio site.
+ * Add custom theme values INSIDE the @theme { } block below.
+ * Do NOT nest @media, @layer, or other at-rules inside @theme.
+ * Do NOT use rgb()/hsl() here — hex only.
+ */
+@theme {
+	/* -------- Brand palette -------- */
+	--color-brand: #14bad9; /* Promoholic cyan */
+	--color-brand-dark: #0c93b0; /* darker cyan for hover/gradients */
+	--color-brand-soft: #e7f9fd; /* tinted background wash */
+	--color-brand-foreground: #ffffff;
+
+	/* -------- Ink / neutrals -------- */
+	--color-ink: #0a1519; /* near-black headline text */
+	--color-ink-soft: #4a585d; /* muted body text */
+	--color-surface: #ffffff;
+	--color-surface-alt: #f5fafb; /* alternating section background */
+
+	/* -------- Semantic aliases (used by utility classes) -------- */
+	--color-primary: #14bad9;
+	--color-primary-foreground: #ffffff;
+
+	--color-secondary: #0a1519;
+	--color-secondary-foreground: #ffffff;
+
+	--color-muted: #f5fafb;
+	--color-muted-foreground: #4a585d;
+
+	--color-accent: #14bad9;
+	--color-accent-foreground: #ffffff;
+
+	--color-border: #e4ebed;
+	--color-input: #e4ebed;
+	--color-ring: #14bad9;
+
+	/* -------- Typography -------- */
+	--font-display: 'Archivo', system-ui, sans-serif;
+	--font-sans: 'Inter', system-ui, sans-serif;
+
+	/* -------- Radius -------- */
+	--radius-sm: 0.5rem;
+	--radius-md: 0.75rem;
+	--radius-lg: 1rem;
+	--radius-xl: 1.5rem;
+	--radius-2xl: 2rem;
+}
+
+/* Smooth in-page anchor scrolling for the single-page navigation */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-ink);
+	background-color: var(--color-surface);
+	-webkit-font-smoothing: antialiased;
+}
