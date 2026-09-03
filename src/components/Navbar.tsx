@@ -5,7 +5,7 @@
  */
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Wordmark } from '../components/Wordmark';
+import logoHorizontal from '../assets/uploads/PromoholicLogo2Line.png';
 
 const NAV_LINKS = [
 { label: 'Work', href: '#work' },
@@ -35,7 +35,7 @@ export function Navbar() {
 
 			<nav data-ev-id="ev_98b36315f7" className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 				<a data-ev-id="ev_0b5ab6d6e5" href="#home" aria-label="Promoholic home">
-					<Wordmark tone={scrolled ? 'ink' : 'ink'} className="text-xl" />
+					<img src={logoHorizontal} alt="Promoholic" className="h-8 w-auto" />
 				</a>
 
 				{/* Desktop links */}

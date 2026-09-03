@@ -3,21 +3,23 @@
  */
 import { ArrowUpRight, Play } from 'lucide-react';
 import { stats } from '../data/portfolio';
-import heroImage from '../assets/generated/hero.png';
+import logoHorizontal from '../assets/uploads/PromoholicLogo2Line.png';
 
 export function Hero() {
   return (
     <section data-ev-id="ev_3597852944" id="home" className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
 			{/* Soft brand wash background */}
 			<div data-ev-id="ev_e8a2b217be" className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-brand-soft/70 to-white" />
+			{/* Animated gradient blobs */}
+			<div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+				<div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-brand/20 blur-3xl animate-pulse-slow" />
+				<div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-brand-dark/10 blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}} />
+			</div>
 
 			<div data-ev-id="ev_8e2559e009" className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
 				{/* Copy */}
 				<div data-ev-id="ev_b58e349df2">
-					<span data-ev-id="ev_bf81c5d213" className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
-						<span data-ev-id="ev_dce287f7c8" className="h-1.5 w-1.5 rounded-full bg-brand" />
-						Creative &amp; Video Studio
-					</span>
+					<img src={logoHorizontal} alt="Promoholic" className="h-10 w-auto" />
 
 					<h1 data-ev-id="ev_31989f53d4" className="mt-6 font-display text-5xl font-black leading-[0.95] tracking-tight text-ink sm:text-6xl lg:text-7xl text-balance">
 						We make brands <span data-ev-id="ev_294aee5d40" className="text-brand">impossible</span> to ignore.
@@ -57,12 +59,14 @@ export function Hero() {
 
 				{/* Visual */}
 				<div data-ev-id="ev_e44e42f2d9" className="relative">
-					<div data-ev-id="ev_1f98bdad03" className="overflow-hidden rounded-2xl border border-border shadow-2xl shadow-brand/10">
-						<img data-ev-id="ev_f6ee452020"
-            src={heroImage}
-            alt="Abstract cyan geometric creative composition"
-            className="h-full w-full object-cover" />
-
+					<div className="relative h-96 w-full max-w-lg mx-auto animate-float">
+						<div className="absolute inset-0 bg-gradient-to-br from-brand via-brand-dark to-brand rounded-3xl blur-2xl opacity-60" />
+						<div className="relative h-full w-full rounded-3xl bg-gradient-to-tr from-white/10 to-transparent border border-white/20 backdrop-blur flex items-center justify-center">
+							<div className="text-center text-ink-soft">
+								<p className="font-display text-xl font-bold">Creative Studio</p>
+								<p className="text-sm">Design · Video · Growth</p>
+							</div>
+						</div>
 					</div>
 					<div data-ev-id="ev_649468beda" className="absolute -bottom-5 -left-5 hidden rounded-xl bg-ink px-5 py-4 text-white shadow-xl sm:block">
 						<p data-ev-id="ev_97bb81a53d" className="font-display text-lg font-extrabold leading-none">Design · Video · Growth</p>
@@ -71,5 +75,4 @@ export function Hero() {
 				</div>
 			</div>
 		</section>);
-
 }

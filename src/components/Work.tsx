@@ -68,6 +68,10 @@ export function Work() {
           )}
 				</div>
 
+        <p className="mt-10 text-center text-sm text-ink-soft max-w-2xl mx-auto">
+          These are just a few highlights — we’ve partnered with many more brands as we build identities over time.
+        </p>
+
 				<div data-ev-id="ev_583d294a98" className="mt-12 flex justify-center">
 					<a data-ev-id="ev_5663ea5fc7"
           href="#contact"

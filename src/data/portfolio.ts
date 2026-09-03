@@ -17,6 +17,7 @@ import logoHotelPalm from '../assets/uploads/logo-hotel-palm.png';
 import logoPabitra from '../assets/uploads/logo-pabitra.png';
 import logoGardenCafe from '../assets/uploads/logo-garden-cafe.png';
 import logoAlQayyoom from '../assets/uploads/logo-al-qayyoom.png';
+import logoLumbiniExpert from '../assets/uploads/lumbini Expert-Logo.png';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -119,13 +120,22 @@ export const workItems: WorkItem[] = [
 		description: 'A fresh, plant-forward identity and packaging system.',
 	},
 	{
-		id: 'tiger-palace-social',
+		id: 'garden-cafe-social',
 		title: 'Social Campaign',
-		client: 'Tiger Palace by Soaltee',
+		client: 'Garden Cafe & Restaurant',
 		category: 'Social Media',
 		type: 'design',
 		image: workSocial,
-		description: 'A high-energy social campaign for a luxury resort destination.',
+		description: 'A vibrant social campaign highlighting seasonal menus and garden ambience.',
+	},
+	{
+		id: 'vegan-bite-social',
+		title: 'Social Campaign',
+		client: 'Vegan Bite Nepal',
+		category: 'Social Media',
+		type: 'design',
+		image: workSocial,
+		description: 'Plant‑based storytelling that grew followers and drove footfall.',
 	},
 	{
 		id: 'garden-cafe-identity',
@@ -170,6 +180,9 @@ export const clients: Client[] = [
 	{ name: "Pabitra's Ice Cream", sector: 'Food & Beverage', accent: '#1f3a93', logo: logoPabitra },
 	{ name: 'Garden Cafe & Restaurant', sector: 'Restaurant', accent: '#1f9d55', logo: logoGardenCafe },
 	{ name: 'Al Qayyoom Biryani', sector: 'Restaurant', accent: '#d99a1c', logo: logoAlQayyoom },
+	{ name: 'Lumbini Expert', sector: 'Education & Consulting', accent: '#2c3e50', logo: logoLumbiniExpert },
+	{ name: 'Himalayan Tea House', sector: 'Food & Beverage', accent: '#8b4513', logo: logoVeganBite }, // reuse logo as placeholder
+	{ name: 'Everest Trek Co.', sector: 'Travel', accent: '#2980b9', logo: logoHotelPalm }, // reuse logo as placeholder
 ];
 
 /* -------------------------------------------------------------------------- */

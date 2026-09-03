@@ -1,6 +1,6 @@
 
 import { useState, type FormEvent } from 'react';
-import { Mail, Phone, Send, Camera } from 'lucide-react';
+import { Mail, Phone, Send, Camera, MessageSquare } from 'lucide-react';
 import { Wordmark } from './Wordmark';
 
 export function Contact() {
@@ -26,11 +26,14 @@ export function Contact() {
 					</p>
 
 					<div data-ev-id="ev_5f4dcef2d9" className="mt-8 flex flex-col gap-4">
-						<a data-ev-id="ev_e3513b0b39" href="mailto:hello@promoholic.com" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
-							<Mail size={18} className="text-brand" /> hello@promoholic.com
+						<a data-ev-id="ev_e3513b0b39" href="mailto:promoholicofficial@gmail.com" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
+							<Mail size={18} className="text-brand" /> promoholicofficial@gmail.com
 						</a>
-						<a data-ev-id="ev_01ecb7065d" href="tel:+9779800000000" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
-							<Phone size={18} className="text-brand" /> +977 98-0000-0000
+						<a data-ev-id="ev_01ecb7065d" href="tel:+9779860094185" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
+							<Phone size={18} className="text-brand" /> +977 9860094185
+						</a>
+						<a data-ev-id="ev_whatsapp" href="https://wa.me/9779860094185" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
+							<MessageSquare size={18} className="text-brand" /> WhatsApp us
 						</a>
 						<a data-ev-id="ev_a916730aef" href="https://instagram.com" className="flex items-center gap-3 text-sm text-white/80 hover:text-brand">
 							<Camera size={18} className="text-brand" /> @promoholic
